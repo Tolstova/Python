@@ -14,11 +14,8 @@
 
     {% endfor %}
         <form method = "GET" action="">
-          <label>Город:</label><br>
-          <input type="text" name="city"><br>
-          <label>Язык программирования:</label><br>
-          <input type="text" name="language"><br>
-          <input type="submit" value="Submit">
+          {{form.as_p}}
+            <input type="submit" value="Submit">
         </form>
   {% endblock %}
 
